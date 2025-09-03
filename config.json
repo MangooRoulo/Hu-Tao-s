@@ -1,0 +1,17 @@
+{
+    "token": "OTQ0MDQzOTg2NzUzMDQ0NTUw.Yg73eQ.ZPET-mTTJ0tY63PbkMj0weB4JUI",
+    "youtube-api": "AIzaSyDxMUYKk88G-8z82-7cSHMvPJfQftlwgC4",
+    "prefix": "h!",
+    "emoji": {
+        "play": "▶️",
+        "stop": "⏹️",
+        "queue": "📄",
+        "success": "☑️",
+        "repeat": "🔁",
+        "error": "❌"
+      },
+    "devs": [
+        "317419654140395530",
+        "326871731136626688"
+    ]
+}
