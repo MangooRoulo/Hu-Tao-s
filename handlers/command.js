@@ -7,7 +7,8 @@ module.exports = (client) => {
             let pull = require(`../commands/${dirs}/${file}`);
             client.commands.set(pull.config.name, pull);
             if (pull.config.aliases) pull.config.aliases.forEach(a => client.aliases.set(a, pull.config.name));
-          };
-        };
-        ['musica','Utilidad'].forEach(x => load(x));
-}
+        }
+    };
+    // Puedes agregar más categorías aquí según las carpetas que tengas en commands/
+    ['Utilidad'].forEach(x => load(x));
+};

@@ -1,10 +1,17 @@
 const mongoose = require('mongoose');
-let URLDB = "mongodb+srv://Mango:Steven91031427901.@bot.wgcsy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+// Reemplaza con tu propia URL de conexión a MongoDB
+let URLDB = "mongodb+srv://johanariaspu_db_user:aTspTFWul5a9DPHg@discordbot.0cbiejx.mongodb.net/?retryWrites=true&w=majority&appName=DiscordBot";
+//usuario johanariaspu_db_user
+//pas aTspTFWul5a9DPHg
 
-module.exports = mongoose.connect(URLDB, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}, () => {
-  //mBGTHvbhuNKnyMJW
-  console.log("Se ha conectado a la base de datos")
-});
+module.exports = async () => {
+  try {
+    await mongoose.connect(URLDB, {
+      // useNewUrlParser: true, // Deprecated en Mongoose v6+
+      // useUnifiedTopology: true // Deprecated en Mongoose v6+
+    });
+    console.log("Se ha conectado a la base de datos");
+  } catch (error) {
+    console.error("Error al conectar a la base de datos:", error);
+  }
+};
